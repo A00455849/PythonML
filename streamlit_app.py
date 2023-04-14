@@ -15,6 +15,6 @@ sp_w = st.slider('sepal width (cm)',min_value=0, max_value=10)
 pt_l = st.slider('petal length (cm)',min_value=0, max_value=10)
 pt_w = st.slider('petal width (cm)',min_value=0, max_value=10)
 
-prediction = classifier.predict(np.array([sp_l,sp_w,pt_l,pt_w]))
+prediction = classifier.predict([[sp_l,sp_w,pt_l,pt_w]])
 
 st.write(LABELS[prediction[0]])
