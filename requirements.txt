@@ -1,4 +1,7 @@
-sklearn
+scikit-learn
 pandas
 streamlit
 joblib
+matplotlib
+dtreeviz
+graphviz
