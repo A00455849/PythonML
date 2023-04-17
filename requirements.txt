@@ -2,5 +2,6 @@ scikit-learn
 pandas
 streamlit
 joblib
-keras
-tensorflow
+matplotlib
+dtreeviz
+graphviz
