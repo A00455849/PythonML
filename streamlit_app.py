@@ -17,4 +17,5 @@ pt_w = st.slider('petal width (cm)',min_value=0, max_value=10)
 
 prediction = classifier.predict([[sp_l,sp_w,pt_l,pt_w]])
 
-st.write(LABELS[prediction[0]])
+st.write(f"Decision Tree Predicts {LABELS[prediction[0]]}")
+
