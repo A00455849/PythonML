@@ -6,6 +6,7 @@ import tensorflow
 
 print(keras.__version__)
 print(tensorflow.__version__)
+st.stop()
 
 
 st.title("Deploying the model")
