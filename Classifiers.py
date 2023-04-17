@@ -1,3 +1,5 @@
+import streamlit as st
+
 from sklearn.datasets import load_iris
 from sklearn import tree
 from sklearn.metrics import accuracy_score
@@ -9,7 +11,6 @@ from tensorflow.keras.layers import Dense, Activation, Dropout
 from tensorflow.keras.utils import to_categorical, plot_model
 import numpy as np
 from joblib import dump
-import streamlit as st
 
 # Load IRIS dataset
 data = load_iris()     
