@@ -13,7 +13,7 @@ st.title("Deploying the model")
 LABELS = ['setosa', 'versicolor', 'virginica']
 
 DecisionTreeClassifier = load("IrisClassifier.joblib")
-NeuralNetworkClassifier = load("NeuralNetwork.joblib")
+NeuralNetworkClassifier = load("NeuralNetwork1.joblib")
 
 #%%
 
