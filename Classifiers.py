@@ -1,5 +1,3 @@
-import streamlit as st
-
 from sklearn.datasets import load_iris
 from sklearn import tree
 from sklearn.metrics import accuracy_score
