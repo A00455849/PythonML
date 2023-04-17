@@ -6,14 +6,13 @@ import tensorflow
 
 st.write(f"Keras version {keras.__version__}")
 st.write(f"Keras version {tensorflow.__version__}")
-st.stop()
 
 
 st.title("Deploying the model")
 LABELS = ['setosa', 'versicolor', 'virginica']
 
 DecisionTreeClassifier = load("IrisClassifier.joblib")
-NeuralNetworkClassifier = load("NeuralNetwork1.joblib")
+NeuralNetworkClassifier = load("NeuralNetwork.joblib")
 
 #%%
 
@@ -27,4 +26,4 @@ DT_Predict = DecisionTreeClassifier.predict([[sp_l,sp_w,pt_l,pt_w]])
 NN_Predict = NeuralNetworkClassifier.predict([[sp_l,sp_w,pt_l,pt_w]])
 
 st.write(f"Decision Tree predicts {LABELS[DT_Predict[0]]}")
-st.write(f"Neural Network predicts {LABELS[NN_Predict[0]]}")
+st.write(f"Neural Network predicts {LABELS[np.argmax(NN_Predict)]}")

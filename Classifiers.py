@@ -9,6 +9,7 @@ from tensorflow.keras.layers import Dense, Activation, Dropout
 from tensorflow.keras.utils import to_categorical, plot_model
 import numpy as np
 from joblib import dump
+import streamlit as st
 
 # Load IRIS dataset
 data = load_iris()     
