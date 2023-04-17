@@ -1,6 +1,11 @@
 import streamlit as st
 import numpy as np
 from joblib import dump, load
+import keras
+import tensorflow
+
+print(keras.__version__)
+print(tensorflow.__version__)
 
 
 st.title("Deploying the model")
