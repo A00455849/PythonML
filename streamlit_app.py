@@ -4,10 +4,6 @@ from joblib import dump, load
 import keras
 import tensorflow
 
-st.write(f"Keras version {keras.__version__}")
-st.write(f"Keras version {tensorflow.__version__}")
-
-
 st.title("Deploying the model")
 LABELS = ['setosa', 'versicolor', 'virginica']
 
